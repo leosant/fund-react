@@ -1,0 +1,43 @@
+.CardColor {
+    display: block;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: 3px solid;
+    border-radius: 8px;
+    border-color: #000;    
+    margin: 10px;
+    max-width: 300px;
+    min-width: 300px;
+}
+
+.CardColor .FieldsText {
+    padding: 8px;
+}
+
+.CardColor .FieldsText input {
+    margin: 0px;
+    height: 30px;
+    max-width: 200px;
+    min-width: 200px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.CardColor .FieldsText button {
+    margin: 0px 10px 0 2px;
+    height: 35px;
+    max-width: 35px;
+    min-width: 35px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #fff5f5;
+    opacity: 1;
+}
+
+.CardColor .FieldsText button:hover { 
+    transition: 0.2s;
+    opacity: 0.8;
+}

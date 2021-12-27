@@ -1,0 +1,16 @@
+.Table {
+    width: 100%;
+}
+
+.Table thead{
+    background-color:#8A1428;
+    color: #FFFFFF;
+}
+
+.Tableb .Par{
+    background-color:#cabec0;
+}
+
+.Table .Impar{
+    background-color:#686868;
+}
