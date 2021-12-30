@@ -10,6 +10,8 @@ import Family from "./components/basics/Family";
 import FamilyChildren from "./components/basics/FamilyChildren";
 import ListStudent from "./components/repeat/ListStudent";
 import TableProduct from "./components/repeat/TableProduct";
+import PairOrOdd from "./components/conditions/PairOrOdd";
+import UserInf from "./components/conditions/UserInf";
 
 import "./App.css";
 
@@ -20,12 +22,21 @@ export default () => (
     <CardColor />
 
     <div className="Cards">
+
+      <Card title="#08 - Par ou Impar" color="#788545">
+        <PairOrOdd number={20}/>
+        <UserInf user={ {name:"Leonardo", note:10, isNerd: true} }/>
+        <UserInf user={ {name:"t", note:2, isNerd: false} }/>
+      </Card>
+
       <Card title="#07 - Lista de produtos" color="#607880">
         <TableProduct/>
       </Card>
+
       <Card title="#06 - Lista de alunos" color="#545890">
         <ListStudent/>
       </Card>
+
       <Card title="#05 - Componente com Filhos" color="#854874">
         <Family lastName="Santos">
           <FamilyChildren name="Leonardo" />
@@ -33,6 +44,7 @@ export default () => (
           <FamilyChildren name="Emanuel" />
         </Family>
       </Card>
+
       <Card title="#04 - Número randomico" color="#581845">
         <Random min={5} max={10} />
       </Card>
