@@ -1,18 +1,23 @@
-import React from 'react';
+import React from "react";
 
-import If from "./If";
+import If, { Else } from "./If";
 
+export default (props) => {
+  const user = props.user || {};
 
-export default props => {
-
-    const user = props.user || {};
-    console.log('user>>>', user)
-
-    return (
-        <div>
-            <If expression={user && user.name}>
-                <span>nome: {user.name} nota: {user.note} é nerd? {user.isNerd ? 'Verdade' : 'Falso'}</span>
-            </If>
-        </div>
-    )
-}
+  return (
+    <div>
+      <If expression={user && user.name}>
+        <span>
+          nome: {user.name} nota: {user.note} é nerd?{" "}
+          {user.isNerd ? "Verdade" : "Falso"}
+        </span>
+        <Else>
+          <div>
+            <span>Informação incompleta</span>
+          </div>
+        </Else>
+      </If>
+    </div>
+  );
+};

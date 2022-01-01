@@ -26,7 +26,7 @@ export default () => (
       <Card title="#08 - Par ou Impar" color="#788545">
         <PairOrOdd number={20}/>
         <UserInf user={ {name:"Leonardo", note:10, isNerd: true} }/>
-        <UserInf user={ {name:"t", note:2, isNerd: false} }/>
+        <UserInf user={ {note:2, isNerd: false} }/>
       </Card>
 
       <Card title="#07 - Lista de produtos" color="#607880">

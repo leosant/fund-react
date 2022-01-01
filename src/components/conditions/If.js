@@ -1,11 +1,23 @@
-
-export default props => {
-    console.log('expression>>>', props)
-    if(props.expression) {
-        return props.children;
-    }
-    else {
-        return false;
-    }
+export default (props) => {
     
-}
+  const elseChild = props.children.filter((child) => {
+    return child.type && child.type.name === "Else";
+  })[0];
+
+  const ifChild = props.children.filter((child) => {
+    return child !== elseChild;
+  });
+
+  if (props.expression) {
+    return ifChild;
+  }
+  else if (elseChild) {
+    return elseChild;
+
+  }
+  else {
+    return false;
+  }
+};
+
+export const Else = (props) => props.children;
