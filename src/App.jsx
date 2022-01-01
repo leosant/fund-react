@@ -12,6 +12,8 @@ import ListStudent from "./components/repeat/ListStudent";
 import TableProduct from "./components/repeat/TableProduct";
 import PairOrOdd from "./components/conditions/PairOrOdd";
 import UserInf from "./components/conditions/UserInf";
+import DirectFather from "./components/comunication/DirectFather";
+import IndirectFather from "./components/comunication/IndirectFather.jsx";
 
 import "./App.css";
 
@@ -22,19 +24,26 @@ export default () => (
     <CardColor />
 
     <div className="Cards">
+      <Card title="#10 - Comunicação indireta" color="#33ccff">
+        <IndirectFather />
+      </Card>
+
+      <Card title="#09 - Comunicação direta" color="#111145">
+        <DirectFather />
+      </Card>
 
       <Card title="#08 - Par ou Impar" color="#788545">
-        <PairOrOdd number={20}/>
-        <UserInf user={ {name:"Leonardo", note:10, isNerd: true} }/>
-        <UserInf user={ {note:2, isNerd: false} }/>
+        <PairOrOdd number={20} />
+        <UserInf user={{ name: "Leonardo", note: 10, isNerd: true }} />
+        <UserInf user={{ note: 2, isNerd: false }} />
       </Card>
 
       <Card title="#07 - Lista de produtos" color="#607880">
-        <TableProduct/>
+        <TableProduct />
       </Card>
 
       <Card title="#06 - Lista de alunos" color="#545890">
-        <ListStudent/>
+        <ListStudent />
       </Card>
 
       <Card title="#05 - Componente com Filhos" color="#854874">
