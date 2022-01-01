@@ -14,6 +14,7 @@ import PairOrOdd from "./components/conditions/PairOrOdd";
 import UserInf from "./components/conditions/UserInf";
 import DirectFather from "./components/comunication/DirectFather";
 import IndirectFather from "./components/comunication/IndirectFather.jsx";
+import Input from "./components/form/Input"
 
 import "./App.css";
 
@@ -24,6 +25,11 @@ export default () => (
     <CardColor />
 
     <div className="Cards">
+
+      <Card title="#11 - Componentes controlados" color="#adad85">
+        <Input />
+      </Card>   
+      
       <Card title="#10 - Comunicação indireta" color="#33ccff">
         <IndirectFather />
       </Card>
