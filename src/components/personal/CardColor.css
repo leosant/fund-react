@@ -1,10 +1,16 @@
 .CardColor {
-    display: flex;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: static;
     flex-direction: column;
     border: 3px solid;
     border-radius: 8px;
-    border-color: #000;    
+    border-color: #000;
+    margin: 0 auto;    
     padding: 10px;
+    max-width: 500px;
+    min-width: 500px;   
 }
 
 .CardColor .FieldsText {
@@ -21,7 +27,11 @@
     font-size: 12px;
 }
 
-.CardColor .FieldsText .ButtonSend {
+.CardColor .FieldsText button {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    left: 38%;
     height: 35px;
     max-width: 100px;
     min-width: 100px;

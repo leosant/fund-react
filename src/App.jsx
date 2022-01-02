@@ -19,9 +19,24 @@ import Input from "./components/form/Input";
 import "./App.css";
 
 export default (_) => {
-  const [number, name] = [
-    [11, 10],
-    [" - Componentes controlados", "test"],
+
+  const [number, name] = 
+  [
+    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+    
+    [" - Primeiro componente",
+     " - Com paramêtros",
+     " - Com paramêtros",
+     "- Fragmentos",
+     " - Número randomico",
+     "- Componente com Filhos",
+     " - Lista de alunos",
+     " - Lista de produtos",
+     " - Par ou Impar",
+     " - Comunicação direta",
+     " - Componentes controlados",
+     "- Comunicação indireta"
+    ],
   ];
 
   const [colorCard, setColor] = useState("");
@@ -38,33 +53,33 @@ export default (_) => {
 
       <CardColor clickButton={get}>
         <div className="Cards">
-          <Card title={number[0] + name[0]} color={number[0] == numberCard ? colorCard : "#adad85"}>
+          <Card title={"#" + number[11] + name[11]} color={number[11] == numberCard ? colorCard : "#adad85"}>
             <Input />
           </Card>
 
-          <Card title="#10 - Comunicação indireta" color="#33ccff">
+          <Card title={"#" + number[10] + name[10]} color={number[10] == numberCard ? colorCard : "#33ccff"}>
             <IndirectFather />
           </Card>
 
-          <Card title="#09 - Comunicação direta" color="#111145">
+          <Card title={"#" + number[9] + name[9]} color={number[9] == numberCard ? colorCard : "#111145"}>
             <DirectFather />
           </Card>
 
-          <Card title="#08 - Par ou Impar" color="#788545">
+          <Card title={"#" + number[8] + name[8]} color={number[8] == numberCard ? colorCard : "#788545"}>
             <PairOrOdd number={20} />
             <UserInf user={{ name: "Leonardo", note: 10, isNerd: true }} />
             <UserInf user={{ note: 2, isNerd: false }} />
           </Card>
 
-          <Card title="#07 - Lista de produtos" color="#607880">
+          <Card title={"#" + number[7] + name[7]} color={number[7] == numberCard ? colorCard : "#607880"}>
             <TableProduct />
           </Card>
 
-          <Card title="#06 - Lista de alunos" color="#545890">
+          <Card title={"#" + number[6] + name[6]} color={number[6] == numberCard ? colorCard : "#545890"}>
             <ListStudent />
           </Card>
 
-          <Card title="#05 - Componente com Filhos" color="#854874">
+          <Card title={"#"+ number[5] + name[5]} color={number[5] == numberCard ? colorCard : "#854874"}>
             <Family lastName="Santos">
               <FamilyChildren name="Leonardo" />
               <FamilyChildren name="Emily" />
@@ -72,15 +87,15 @@ export default (_) => {
             </Family>
           </Card>
 
-          <Card title="#04 - Número randomico" color="#581845">
+          <Card title={"#" + number[4] + name[4]} color={number[4] == numberCard ? colorCard : "#581845"}>
             <Random min={5} max={10} />
           </Card>
 
-          <Card title="#03 - Fragmentos" color="#AC0F97">
+          <Card title={"#" + number[3] + name[3]} color={number[3] == numberCard ? colorCard : "#AC0F97"}>
             <Frag />
           </Card>
 
-          <Card title="#02 - Com paramêtros">
+          <Card title={"#" + number[2] + name[2]} color={number[2] == numberCard ? colorCard : "#000154"}>
             <WithParameters
               Title="Situação do aluno: "
               student="Leonardo"
@@ -88,7 +103,7 @@ export default (_) => {
             />
           </Card>
 
-          <Card title="#02 - Com paramêtros">
+          <Card title={"#" + number[1] + name[1]} color={number[1] == numberCard ? colorCard : "green"}>
             <WithParameters
               id="props"
               Title="Situação do aluno: "
@@ -97,7 +112,7 @@ export default (_) => {
             />
           </Card>
 
-          <Card title="#01 - Primeiro componente">
+          <Card title={"#" + number[0] + name[0]} color={number[0] == numberCard ? colorCard : "red"}>
             <First />
           </Card>
         </div>
