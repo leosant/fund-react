@@ -35,7 +35,7 @@ export default (props) => {
             onChange={whenChangeColor}
           ></input>
 
-          <button className="ButtonSend" onClick={_=> props.clickButton(colorCard, numberCard)}>
+          <button onClick={_=> props.clickButton(colorCard, numberCard)}>
             Enviar
           </button>
 
