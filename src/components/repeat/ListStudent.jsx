@@ -3,7 +3,6 @@ import React from "react";
 import Students from "../../data/students";
 
 export default (_) => {
-  console.log(Students);
 
   const students = Students.map((student) => {
     return (

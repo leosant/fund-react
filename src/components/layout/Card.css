@@ -1,10 +1,10 @@
 .Card {
+    display: flex;
     flex-direction: column;
     border: 3px solid;
     border-radius:10px;
     overflow: hidden;
     margin: 10px;
-    display: flex;
     max-width: 300px;
     min-width:300px;   
 }

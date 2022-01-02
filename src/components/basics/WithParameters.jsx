@@ -1,7 +1,6 @@
 import React from "react";
 
 export default function withParameter(props) {
-    console.log(props)
     const status = props.note >= 7 
             ? 'Aprovado' : props.note <= 3 
             ? 'Reprovado' : 'Recuperação'
